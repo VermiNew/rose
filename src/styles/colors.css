@@ -1,0 +1,48 @@
+/* Rose color palette — design tokens.
+   Derived from the logo gradient + a real rose (deep red) and its leaves.
+   Ramps: rose (brand), red (danger/error), green (success),
+   amber (warning), neutral (surfaces, text, borders). */
+
+:root {
+  /* Rose — brand / primary accent (main accent ~ 400/500) */
+  --rose-50: #fbeaee;
+  --rose-100: #f3c7d1;
+  --rose-200: #e89aac;
+  --rose-300: #d96b85;
+  --rose-400: #c2506a;
+  --rose-500: #a53a54;
+  --rose-600: #8f3348;
+  --rose-700: #6e2538;
+  --rose-800: #4a1826;
+
+  /* Red — real rose red, reserved for danger / error */
+  --red-50: #fbeaea;
+  --red-200: #e8a3a3;
+  --red-400: #c2312f;
+  --red-600: #8f1f1f;
+  --red-800: #5a1414;
+  --red-900: #3a0d0d;
+
+  /* Green — leaves, used for success */
+  --green-50: #eef3ea;
+  --green-200: #b9cca8;
+  --green-400: #6f8f5a;
+  --green-600: #4a5c3f;
+  --green-800: #2e3a26;
+
+  /* Amber — warning */
+  --amber-100: #faeeda;
+  --amber-400: #ef9f27;
+  --amber-700: #633806;
+
+  /* Neutral — surfaces, text, borders (warm gray to match rose) */
+  --neutral-50: #f7f5f5;
+  --neutral-100: #e8e4e4;
+  --neutral-200: #d1cbcb;
+  --neutral-300: #a8a0a0;
+  --neutral-400: #7d7474;
+  --neutral-500: #5a5252;
+  --neutral-600: #3d3737;
+  --neutral-700: #1c1918;
+  --neutral-800: #121010;
+}
