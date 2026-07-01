@@ -14,7 +14,7 @@
 
 ## Sidebar
 - [x] Przycisk „New chat" (statyczny)
-- [ ] Lista czatów (statyczny markup, placeholdery)
+- [x] Lista czatów (statyczny markup, placeholdery)
 - [ ] Stylowanie listy (hover, stan aktywny)
 - [ ] Sekcja profilu użytkownika na dole
 
