@@ -146,6 +146,7 @@ vite.config.ts.timestamp-*
 *.local
 dist-ssr
 .agents/
+.work/
 
 # Editor directories and files
 .vscode/*
