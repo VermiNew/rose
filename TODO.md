@@ -3,14 +3,14 @@
 ## Branding
 - [x] Logo wybrane (gradient, wariant z liśćmi)
 - [x] Paleta kolorów ustalona (rose / red / green / amber / neutral, 32 odcienie)
-- [ ] Zapisać paletę jako CSS variables w `src/styles/`
+- [x] Zapisać paletę jako CSS variables w `src/styles/`
 - [ ] Wyeksportować logo do SVG (obecnie tylko PNG)
 - [ ] Favicon + app icon na bazie logo
 - [ ] Animowane stany logo (idle → thinking → done) — później, wymaga SVG
 
 ## Layout (szkielet)
-- [ ] Wyczyścić domyślny scaffold Vite (App.tsx, App.css, zbędne assets)
-- [ ] Bazowy `.app-layout`: `.sidebar` + `.main-area` (puste, kolory Rose)
+- [x] Wyczyścić domyślny scaffold Vite (App.tsx, App.css, zbędne assets)
+- [x] Bazowy `.app-layout`: `.sidebar` + `.main-area` (puste, kolory Rose)
 
 ## Sidebar
 - [ ] Przycisk „New chat" (statyczny)
