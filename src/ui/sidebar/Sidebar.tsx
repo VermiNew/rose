@@ -1,6 +1,13 @@
 import roseLogo from '../../assets/branding/rose-primary.png'
 import './Sidebar.css'
 
+const recentChatTitles = [
+  'Przykładowa rozmowa 1',
+  'Przykładowa rozmowa 2',
+  'Przykładowa rozmowa 3',
+  'Przykładowa rozmowa 4',
+] as const
+
 function Sidebar() {
   return (
     <aside className="sidebar" aria-label="Główna nawigacja">
@@ -21,6 +28,19 @@ function Sidebar() {
         </svg>
         <span>Nowy czat</span>
       </button>
+
+      <section className="sidebar__history" aria-labelledby="recent-chats-heading">
+        <h2 className="sidebar__section-title" id="recent-chats-heading">
+          Ostatnie
+        </h2>
+        <ul className="sidebar__chat-list">
+          {recentChatTitles.map((title) => (
+            <li className="sidebar__chat-item" key={title}>
+              {title}
+            </li>
+          ))}
+        </ul>
+      </section>
     </aside>
   )
 }

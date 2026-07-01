@@ -85,6 +85,37 @@
   stroke-width: 1.8;
 }
 
+.sidebar__history {
+  margin-top: 8px;
+}
+
+.sidebar__section-title {
+  margin: 0;
+  padding: 0 10px;
+  color: var(--neutral-300);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.sidebar__chat-list {
+  display: grid;
+  gap: 2px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar__chat-item {
+  overflow: hidden;
+  padding: 8px 10px;
+  color: var(--neutral-200);
+  font-size: 13.5px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .sidebar__new-chat {
     transition: none;
