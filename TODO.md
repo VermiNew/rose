@@ -13,7 +13,7 @@
 - [x] Bazowy `.app-layout`: `.sidebar` + `.main-area` (puste, kolory Rose)
 
 ## Sidebar
-- [ ] Przycisk „New chat" (statyczny)
+- [x] Przycisk „New chat" (statyczny)
 - [ ] Lista czatów (statyczny markup, placeholdery)
 - [ ] Stylowanie listy (hover, stan aktywny)
 - [ ] Sekcja profilu użytkownika na dole
