@@ -1,12 +1,14 @@
 import roseLogo from '../../assets/branding/rose-primary.png'
 import './Sidebar.css'
 
-const recentChatTitles = [
-  'Przykładowa rozmowa 1',
-  'Przykładowa rozmowa 2',
-  'Przykładowa rozmowa 3',
-  'Przykładowa rozmowa 4',
+const recentChats = [
+  { id: 'chat-1', title: 'Przykładowa rozmowa 1' },
+  { id: 'chat-2', title: 'Przykładowa rozmowa 2' },
+  { id: 'chat-3', title: 'Przykładowa rozmowa 3' },
+  { id: 'chat-4', title: 'Przykładowa rozmowa 4' },
 ] as const
+
+const activeChatId = 'chat-1'
 
 function Sidebar() {
   return (
@@ -34,11 +36,19 @@ function Sidebar() {
           Ostatnie
         </h2>
         <ul className="sidebar__chat-list">
-          {recentChatTitles.map((title) => (
-            <li className="sidebar__chat-item" key={title}>
-              {title}
-            </li>
-          ))}
+          {recentChats.map((chat) => {
+            const isActive = chat.id === activeChatId
+
+            return (
+              <li
+                aria-current={isActive ? 'page' : undefined}
+                className={`sidebar__chat-item${isActive ? ' sidebar__chat-item--active' : ''}`}
+                key={chat.id}
+              >
+                {chat.title}
+              </li>
+            )
+          })}
         </ul>
       </section>
     </aside>

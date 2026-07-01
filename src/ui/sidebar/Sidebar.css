@@ -109,15 +109,30 @@
 .sidebar__chat-item {
   overflow: hidden;
   padding: 8px 10px;
+  border-radius: 8px;
   color: var(--neutral-200);
   font-size: 13.5px;
   line-height: 1.35;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition:
+    color 140ms ease,
+    background-color 140ms ease;
+}
+
+.sidebar__chat-item:not(.sidebar__chat-item--active):hover {
+  color: var(--neutral-50);
+  background: var(--neutral-600);
+}
+
+.sidebar__chat-item--active {
+  color: var(--neutral-50);
+  background: var(--neutral-800);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sidebar__new-chat {
+  .sidebar__new-chat,
+  .sidebar__chat-item {
     transition: none;
   }
 }
