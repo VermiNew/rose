@@ -20,7 +20,7 @@
 
 ## Główny obszar — ekran powitalny
 - [x] Nagłówek powitalny
-- [ ] Input na środku (statyczny)
+- [x] Input na środku (statyczny)
 
 ## Główny obszar — ekran rozmowy
 - [ ] Kontener na wiadomości (mock dane)
