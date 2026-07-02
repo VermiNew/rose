@@ -1,5 +1,5 @@
 import Sidebar from './ui/sidebar/Sidebar'
-import './App.css'
+import './styles/layout.css'
 
 function App() {
   return (
