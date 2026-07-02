@@ -24,7 +24,7 @@
 
 ## Główny obszar — ekran rozmowy
 - [x] Przełączanie widoku: nowy czat / aktywna rozmowa
-- [ ] Kontener na wiadomości (mock dane)
+- [x] Kontener na wiadomości (mock dane)
 - [ ] Bąbelek wiadomości użytkownika
 - [ ] Blok odpowiedzi asystenta
 - [ ] Input przyklejony na dole
