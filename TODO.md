@@ -23,6 +23,7 @@
 - [x] Input na środku (statyczny)
 
 ## Główny obszar — ekran rozmowy
+- [x] Przełączanie widoku: nowy czat / aktywna rozmowa
 - [ ] Kontener na wiadomości (mock dane)
 - [ ] Bąbelek wiadomości użytkownika
 - [ ] Blok odpowiedzi asystenta

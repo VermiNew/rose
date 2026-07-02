@@ -1,4 +1,4 @@
-import { LuUserRound } from 'react-icons/lu'
+import { LuPlus, LuUserRound } from 'react-icons/lu'
 import roseLogo from '../../assets/branding/rose-primary.png'
 import './Sidebar.css'
 
@@ -9,9 +9,13 @@ const recentChats = [
   { id: 'chat-4', title: 'Przykładowa rozmowa 4' },
 ] as const
 
-const activeChatId = 'chat-1'
+interface SidebarProps {
+  activeChatId: string | null
+  onNewChat: () => void
+  onSelectChat: (chatId: string) => void
+}
 
-function Sidebar() {
+function Sidebar({ activeChatId, onNewChat, onSelectChat }: SidebarProps) {
   return (
     <aside className="sidebar" aria-label="Główna nawigacja">
       <div className="brand">
@@ -21,14 +25,8 @@ function Sidebar() {
         <span className="brand-name">Rose</span>
       </div>
 
-      <button className="new-chat" type="button">
-        <svg
-          aria-hidden="true"
-          className="new-chat-icon"
-          viewBox="0 0 20 20"
-        >
-          <path d="M10 4v12M4 10h12" />
-        </svg>
+      <button className="new-chat" type="button" onClick={onNewChat}>
+        <LuPlus aria-hidden="true" className="new-chat-icon" />
         <span>Nowy czat</span>
       </button>
 
@@ -41,12 +39,15 @@ function Sidebar() {
             const isActive = chat.id === activeChatId
 
             return (
-              <li
-                aria-current={isActive ? 'page' : undefined}
-                className={isActive ? 'chat-item active' : 'chat-item'}
-                key={chat.id}
-              >
-                {chat.title}
+              <li key={chat.id}>
+                <button
+                  aria-current={isActive ? 'page' : undefined}
+                  className={isActive ? 'chat-item active' : 'chat-item'}
+                  onClick={() => onSelectChat(chat.id)}
+                  type="button"
+                >
+                  {chat.title}
+                </button>
               </li>
             )
           })}

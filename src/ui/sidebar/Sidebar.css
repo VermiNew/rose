@@ -109,14 +109,21 @@
 }
 
 .sidebar .chat-item {
+  display: block;
+  width: 100%;
   overflow: hidden;
   padding: 8px 10px;
+  border: 0;
   border-radius: 8px;
   color: var(--neutral-200);
+  background: transparent;
+  font: inherit;
   font-size: 13.5px;
   line-height: 1.35;
+  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
   transition:
     color 140ms ease,
     background-color 140ms ease;
@@ -130,6 +137,11 @@
 .sidebar .chat-item.active {
   color: var(--neutral-50);
   background: var(--neutral-800);
+}
+
+.sidebar .chat-item:focus-visible {
+  outline: 2px solid var(--rose-300);
+  outline-offset: -2px;
 }
 
 .sidebar .profile {
