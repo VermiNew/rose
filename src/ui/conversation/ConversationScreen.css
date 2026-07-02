@@ -35,8 +35,26 @@
   white-space: pre-wrap;
 }
 
+.conversation-screen .message.user {
+  width: fit-content;
+  max-width: min(560px, 85%);
+  align-self: flex-end;
+  padding: 12px 16px;
+  border-radius: 16px 16px 4px;
+  color: var(--neutral-50);
+  background: var(--rose-800);
+}
+
+.conversation-screen .message.user .sender {
+  color: var(--rose-100);
+}
+
 @media (max-width: 600px) {
   .conversation-screen .message-list {
     padding: 16px 8px;
+  }
+
+  .conversation-screen .message.user {
+    max-width: 92%;
   }
 }
