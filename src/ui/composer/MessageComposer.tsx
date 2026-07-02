@@ -1,14 +1,41 @@
+import { useState, type FormEvent } from 'react'
 import { LuArrowUp, LuPlus } from 'react-icons/lu'
 import './MessageComposer.css'
 
-function MessageComposer() {
+interface MessageComposerProps {
+  onSend?: (content: string) => void
+}
+
+function MessageComposer({ onSend }: MessageComposerProps) {
+  const [draft, setDraft] = useState('')
+  const trimmedDraft = draft.trim()
+  const canSend = Boolean(onSend && trimmedDraft)
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+
+    if (!onSend || !trimmedDraft) {
+      return
+    }
+
+    onSend(trimmedDraft)
+    setDraft('')
+  }
+
   return (
-    <div className="message-composer">
+    <form
+      aria-label="Edytor wiadomości"
+      className="message-composer"
+      onSubmit={handleSubmit}
+    >
       <textarea
         aria-label="Wiadomość"
         className="input"
+        maxLength={4000}
+        onChange={(event) => setDraft(event.target.value)}
         placeholder="Napisz wiadomość…"
         rows={3}
+        value={draft}
       />
       <div className="actions">
         <button
@@ -22,13 +49,13 @@ function MessageComposer() {
         <button
           aria-label="Wyślij wiadomość"
           className="icon-button send"
-          disabled
-          type="button"
+          disabled={!canSend}
+          type="submit"
         >
           <LuArrowUp aria-hidden="true" />
         </button>
       </div>
-    </div>
+    </form>
   )
 }
 

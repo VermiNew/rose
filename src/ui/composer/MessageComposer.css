@@ -66,6 +66,14 @@
   background: var(--rose-800);
 }
 
+.message-composer .send:not(:disabled) {
+  cursor: pointer;
+}
+
+.message-composer .send:not(:disabled):hover {
+  background: var(--rose-700);
+}
+
 .message-composer .icon-button:disabled {
   cursor: not-allowed;
   opacity: 0.55;

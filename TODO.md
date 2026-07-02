@@ -29,6 +29,9 @@
 - [x] Blok odpowiedzi asystenta
 - [x] Input przyklejony na dole
 
+## Interakcje rozmowy
+- [x] Lokalne wysyłanie wiadomości użytkownika
+
 ## Później
 - [ ] Obsługa PL / EN w UI (i18n)
 - [ ] Integracja z providerami np. NVIDIA NIM
