@@ -1,0 +1,30 @@
+.welcome-screen {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.welcome-screen .greeting {
+  max-width: 640px;
+  margin: 0;
+  color: var(--neutral-50);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 550;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-wrap: balance;
+}
+
+@media (max-width: 600px) {
+  .welcome-screen {
+    padding: 16px 8px;
+  }
+
+  .welcome-screen .greeting {
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+}

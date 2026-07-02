@@ -19,7 +19,7 @@
 - [x] Sekcja profilu użytkownika na dole
 
 ## Główny obszar — ekran powitalny
-- [ ] Nagłówek powitalny
+- [x] Nagłówek powitalny
 - [ ] Input na środku (statyczny)
 
 ## Główny obszar — ekran rozmowy
