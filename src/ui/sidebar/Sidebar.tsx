@@ -13,17 +13,17 @@ const activeChatId = 'chat-1'
 function Sidebar() {
   return (
     <aside className="sidebar" aria-label="Główna nawigacja">
-      <div className="sidebar__brand">
-        <span className="sidebar__logo-frame" aria-hidden="true">
-          <img className="sidebar__logo" src={roseLogo} alt="" />
+      <div className="brand">
+        <span className="logo-frame" aria-hidden="true">
+          <img className="logo" src={roseLogo} alt="" />
         </span>
-        <span className="sidebar__brand-name">Rose</span>
+        <span className="brand-name">Rose</span>
       </div>
 
-      <button className="sidebar__new-chat" type="button">
+      <button className="new-chat" type="button">
         <svg
           aria-hidden="true"
-          className="sidebar__new-chat-icon"
+          className="new-chat-icon"
           viewBox="0 0 20 20"
         >
           <path d="M10 4v12M4 10h12" />
@@ -31,18 +31,18 @@ function Sidebar() {
         <span>Nowy czat</span>
       </button>
 
-      <section className="sidebar__history" aria-labelledby="recent-chats-heading">
-        <h2 className="sidebar__section-title" id="recent-chats-heading">
+      <section className="history" aria-labelledby="recent-chats-heading">
+        <h2 className="section-title" id="recent-chats-heading">
           Ostatnie
         </h2>
-        <ul className="sidebar__chat-list">
+        <ul className="chat-list">
           {recentChats.map((chat) => {
             const isActive = chat.id === activeChatId
 
             return (
               <li
                 aria-current={isActive ? 'page' : undefined}
-                className={`sidebar__chat-item${isActive ? ' sidebar__chat-item--active' : ''}`}
+                className={isActive ? 'chat-item active' : 'chat-item'}
                 key={chat.id}
               >
                 {chat.title}

@@ -15,7 +15,7 @@
 ## Sidebar
 - [x] Przycisk „New chat" (statyczny)
 - [x] Lista czatów (statyczny markup, placeholdery)
-- [ ] Stylowanie listy (hover, stan aktywny)
+- [x] Stylowanie listy (hover, stan aktywny)
 - [ ] Sekcja profilu użytkownika na dole
 
 ## Główny obszar — ekran powitalny

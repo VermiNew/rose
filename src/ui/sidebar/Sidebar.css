@@ -9,7 +9,7 @@
   border-right: 1px solid var(--neutral-600);
 }
 
-.sidebar__brand {
+.sidebar .brand {
   display: flex;
   min-height: 40px;
   align-items: center;
@@ -17,7 +17,7 @@
   padding: 0 8px;
 }
 
-.sidebar__logo-frame {
+.sidebar .logo-frame {
   position: relative;
   display: block;
   width: 32px;
@@ -27,7 +27,7 @@
   border-radius: 9px;
 }
 
-.sidebar__logo {
+.sidebar .logo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,14 +37,14 @@
   mix-blend-mode: screen;
 }
 
-.sidebar__brand-name {
+.sidebar .brand-name {
   color: var(--neutral-50);
   font-size: 18px;
   font-weight: 650;
   letter-spacing: -0.02em;
 }
 
-.sidebar__new-chat {
+.sidebar .new-chat {
   display: flex;
   width: 100%;
   min-height: 42px;
@@ -65,17 +65,17 @@
     border-color 140ms ease;
 }
 
-.sidebar__new-chat:hover {
+.sidebar .new-chat:hover {
   background: var(--rose-700);
   border-color: var(--rose-600);
 }
 
-.sidebar__new-chat:focus-visible {
+.sidebar .new-chat:focus-visible {
   outline: 2px solid var(--rose-300);
   outline-offset: 2px;
 }
 
-.sidebar__new-chat-icon {
+.sidebar .new-chat-icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
@@ -85,11 +85,11 @@
   stroke-width: 1.8;
 }
 
-.sidebar__history {
+.sidebar .history {
   margin-top: 8px;
 }
 
-.sidebar__section-title {
+.sidebar .section-title {
   margin: 0;
   padding: 0 10px;
   color: var(--neutral-300);
@@ -98,7 +98,7 @@
   letter-spacing: 0.02em;
 }
 
-.sidebar__chat-list {
+.sidebar .chat-list {
   display: grid;
   gap: 2px;
   margin: 6px 0 0;
@@ -106,7 +106,7 @@
   list-style: none;
 }
 
-.sidebar__chat-item {
+.sidebar .chat-item {
   overflow: hidden;
   padding: 8px 10px;
   border-radius: 8px;
@@ -120,19 +120,19 @@
     background-color 140ms ease;
 }
 
-.sidebar__chat-item:not(.sidebar__chat-item--active):hover {
+.sidebar .chat-item:not(.active):hover {
   color: var(--neutral-50);
   background: var(--neutral-600);
 }
 
-.sidebar__chat-item--active {
+.sidebar .chat-item.active {
   color: var(--neutral-50);
   background: var(--neutral-800);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sidebar__new-chat,
-  .sidebar__chat-item {
+  .sidebar .new-chat,
+  .sidebar .chat-item {
     transition: none;
   }
 }
