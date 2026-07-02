@@ -26,7 +26,7 @@
 - [x] Przełączanie widoku: nowy czat / aktywna rozmowa
 - [x] Kontener na wiadomości (mock dane)
 - [x] Bąbelek wiadomości użytkownika
-- [ ] Blok odpowiedzi asystenta
+- [x] Blok odpowiedzi asystenta
 - [ ] Input przyklejony na dole
 
 ## Później
