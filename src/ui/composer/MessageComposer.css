@@ -1,0 +1,85 @@
+.message-composer {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--neutral-600);
+  border-radius: 16px;
+  background: var(--neutral-700);
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.message-composer:focus-within {
+  border-color: var(--rose-500);
+  box-shadow: 0 0 0 1px var(--rose-600);
+}
+
+.message-composer .input {
+  display: block;
+  width: 100%;
+  min-height: 64px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  color: var(--neutral-50);
+  background: transparent;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: none;
+}
+
+.message-composer .input::placeholder {
+  color: var(--neutral-400);
+  opacity: 1;
+}
+
+.message-composer .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.message-composer .icon-button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  border-radius: 9px;
+  color: var(--neutral-200);
+}
+
+.message-composer .icon-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.message-composer .attachment {
+  background: transparent;
+}
+
+.message-composer .send {
+  color: var(--rose-100);
+  background: var(--rose-800);
+}
+
+.message-composer .icon-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+@media (max-width: 600px) {
+  .message-composer {
+    padding: 10px;
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .message-composer {
+    transition: none;
+  }
+}

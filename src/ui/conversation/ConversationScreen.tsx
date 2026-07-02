@@ -1,3 +1,4 @@
+import MessageComposer from '../composer/MessageComposer'
 import './ConversationScreen.css'
 
 const mockMessages = [
@@ -27,6 +28,9 @@ function ConversationScreen() {
           </li>
         ))}
       </ol>
+      <footer className="composer-area">
+        <MessageComposer />
+      </footer>
     </section>
   )
 }

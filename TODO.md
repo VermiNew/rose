@@ -27,7 +27,7 @@
 - [x] Kontener na wiadomości (mock dane)
 - [x] Bąbelek wiadomości użytkownika
 - [x] Blok odpowiedzi asystenta
-- [ ] Input przyklejony na dole
+- [x] Input przyklejony na dole
 
 ## Później
 - [ ] Obsługa PL / EN w UI (i18n)
