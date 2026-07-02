@@ -1,3 +1,4 @@
+import { LuUserRound } from 'react-icons/lu'
 import roseLogo from '../../assets/branding/rose-primary.png'
 import './Sidebar.css'
 
@@ -51,6 +52,16 @@ function Sidebar() {
           })}
         </ul>
       </section>
+
+      <footer className="profile" aria-label="Profil użytkownika">
+        <span className="profile-avatar" aria-hidden="true">
+          <LuUserRound />
+        </span>
+        <span className="profile-details">
+          <span className="profile-name">Gość</span>
+          <span className="profile-plan">Konto lokalne</span>
+        </span>
+      </footer>
     </aside>
   )
 }

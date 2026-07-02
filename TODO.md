@@ -16,7 +16,7 @@
 - [x] Przycisk „New chat" (statyczny)
 - [x] Lista czatów (statyczny markup, placeholdery)
 - [x] Stylowanie listy (hover, stan aktywny)
-- [ ] Sekcja profilu użytkownika na dole
+- [x] Sekcja profilu użytkownika na dole
 
 ## Główny obszar — ekran powitalny
 - [ ] Nagłówek powitalny
