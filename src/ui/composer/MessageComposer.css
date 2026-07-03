@@ -50,6 +50,12 @@
   border: 0;
   border-radius: 8px;
   color: var(--neutral-200);
+  transition: background-color 140ms ease;
+}
+
+.message-composer .icon-button:focus-visible {
+  outline: 2px solid var(--rose-300);
+  outline-offset: 2px;
 }
 
 .message-composer .icon-button svg {
@@ -59,6 +65,10 @@
 
 .message-composer .attachment {
   background: transparent;
+}
+
+.message-composer .attachment:not(:disabled):hover {
+  background: var(--neutral-600);
 }
 
 .message-composer .send {
@@ -87,7 +97,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .message-composer {
+  .message-composer,
+  .message-composer .icon-button {
     transition: none;
   }
 }

@@ -27,7 +27,7 @@ tandetnych gradientów i cieni "na siłę".
 - [x] Ograniczyć szerokość tekstu wiadomości (max-width, wygodna długość linii)
 - [x] Stylowanie scrollbara pod ciemny motyw (subtelny, nie systemowy)
 - [x] Ujednolicić promienie zaokrągleń i odstępy (jedna skala, nie przypadkowe wartości)
-- [ ] Wyraźniejszy stan hover/focus na liście czatów i przyciskach
+- [x] Wyraźniejszy stan hover/focus na liście czatów i przyciskach
 
 ## Średnie
 - [ ] `POST /api/chat` — proxy do NVIDIA NIM (na start bez streamingu)
