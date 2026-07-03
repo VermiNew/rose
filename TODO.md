@@ -1,5 +1,11 @@
 # TODO — Rose
 
+## Kierunek wizualny
+Miks claude.ai (przestrzeń, spokojna typografia, wygodne dymki wiadomości)
+i OpenCode (ciepły, ciemny motyw, powściągliwy ruch, jeden akcent koloru —
+to już mamy w `colors.css`). Cel: komfortowo, bez męczenia oczu, bez
+tandetnych gradientów i cieni "na siłę".
+
 ## Zrobione
 - [x] Branding: logo, paleta kolorów (32 odcienie), SVG, favicon + PWA app icons
 - [x] Layout: `.app-layout` (sidebar + main-area), scaffold Vite wyczyszczony
@@ -18,6 +24,10 @@
 - [ ] Przycisk kopiowania treści przy wiadomości asystenta
 - [ ] Empty state, gdy lista czatów w sidebarze jest pusta
 - [ ] React error boundary na wypadek crasha komponentu
+- [ ] Ograniczyć szerokość tekstu wiadomości (max-width, wygodna długość linii)
+- [ ] Stylowanie scrollbara pod ciemny motyw (subtelny, nie systemowy)
+- [ ] Ujednolicić promienie zaokrągleń i odstępy (jedna skala, nie przypadkowe wartości)
+- [ ] Wyraźniejszy stan hover/focus na liście czatów i przyciskach
 
 ## Średnie
 - [ ] `POST /api/chat` — proxy do NVIDIA NIM (na start bez streamingu)
@@ -25,6 +35,7 @@
 - [ ] Stan ładowania i stan błędu w UI podczas oczekiwania na odpowiedź
 - [ ] Anulowanie trwającego zapytania (`AbortController`)
 - [ ] Renderowanie Markdown w odpowiedziach asystenta (bloki kodu, listy, linki)
+- [ ] Stylowanie bloków kodu — monospace, tło, przycisk kopiuj (nawiązanie do OpenCode)
 - [ ] Zapis historii czatu w `localStorage`
 - [ ] Prawdziwa lista czatów w sidebarze (tworzenie, wybór, usuwanie, nie mock)
 - [ ] Regenerowanie ostatniej odpowiedzi asystenta
@@ -32,6 +43,9 @@
 - [ ] Prosty selektor modelu (dropdown — ręczny wybór, zanim powstanie orchestrator)
 - [ ] System prompt / osobowość Rose skonfigurowana po stronie serwera
 - [ ] i18n — infrastruktura + przełącznik PL/EN
+- [ ] Spójny mini design-system komponentów (button, input, dropdown — jedna konwencja)
+- [ ] Płynne przewijanie do najnowszej wiadomości + delikatny fade przy nowej wiadomości
+- [ ] Przełącznik jasny/ciemny motyw (na bazie istniejącej palety)
 
 ## Trudne
 - [ ] Streaming odpowiedzi (SSE) z NIM przez proxy do frontendu, token po tokenie
@@ -42,6 +56,8 @@
 - [ ] Załączniki / upload plików w konwersacji
 - [ ] Testy jednostkowe (komponenty frontendu + endpointy serwera)
 - [ ] CI: lint + build na każdym pushu (GitHub Actions)
+- [ ] Pełny redesign warstwy wizualnej wg kierunku claude.ai × OpenCode (spójny dokument jak DESIGN.md)
+- [ ] Responsywność / układ mobilny
 
 ## Bardzo trudne
 - [ ] Smart orchestrator — automatyczna delegacja do wyspecjalizowanego modelu wg treści zapytania
