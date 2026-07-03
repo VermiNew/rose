@@ -1,37 +1,55 @@
 # TODO — Rose
 
-## Branding
-- [x] Logo wybrane (gradient, wariant z liśćmi)
-- [x] Paleta kolorów ustalona (rose / red / green / amber / neutral, 32 odcienie)
-- [x] Zapisać paletę jako CSS variables w `src/styles/`
-- [x] Wyeksportować logo do SVG
-- [x] Favicon + app icon na bazie logo
-- [ ] Animowane stany logo (idle → thinking → done) — później, wymaga SVG
+## Zrobione
+- [x] Branding: logo, paleta kolorów (32 odcienie), SVG, favicon + PWA app icons
+- [x] Layout: `.app-layout` (sidebar + main-area), scaffold Vite wyczyszczony
+- [x] Sidebar: New chat, lista czatów (statyczna), profil użytkownika
+- [x] Ekran powitalny + ekran rozmowy z przełączaniem
+- [x] Lokalne wysyłanie wiadomości użytkownika (mock, bez backendu)
+- [x] Server: szkielet Express + TypeScript w `/server`, endpoint `/health`
 
-## Layout (szkielet)
-- [x] Wyczyścić domyślny scaffold Vite (App.tsx, App.css, zbędne assets)
-- [x] Bazowy `.app-layout`: `.sidebar` + `.main-area` (puste, kolory Rose)
+## Easy win — szybkie i małe
+- [ ] `.env.example` (server) + wczytanie klucza NVIDIA NIM z env
+- [ ] CORS w Express ograniczony do origin frontendu (obecnie otwarty na wszystko)
+- [ ] Prosty request logger w Express (metoda, path, status, czas odpowiedzi)
+- [ ] `GET /api/models` — statyczna lista dostępnych modeli NIM
+- [ ] `VITE_API_URL` w `.env` frontendu zamiast hardcodowanego `localhost:3001`
+- [ ] Wskaźnik „Rose pisze…" w UI (statyczny tekst, bez animacji logo)
+- [ ] Przycisk kopiowania treści przy wiadomości asystenta
+- [ ] Empty state, gdy lista czatów w sidebarze jest pusta
+- [ ] React error boundary na wypadek crasha komponentu
 
-## Sidebar
-- [x] Przycisk „New chat" (statyczny)
-- [x] Lista czatów (statyczny markup, placeholdery)
-- [x] Stylowanie listy (hover, stan aktywny)
-- [x] Sekcja profilu użytkownika na dole
+## Średnie
+- [ ] `POST /api/chat` — proxy do NVIDIA NIM (na start bez streamingu)
+- [ ] Podłączenie `ConversationScreen` do prawdziwego backendu zamiast mocka
+- [ ] Stan ładowania i stan błędu w UI podczas oczekiwania na odpowiedź
+- [ ] Anulowanie trwającego zapytania (`AbortController`)
+- [ ] Renderowanie Markdown w odpowiedziach asystenta (bloki kodu, listy, linki)
+- [ ] Zapis historii czatu w `localStorage`
+- [ ] Prawdziwa lista czatów w sidebarze (tworzenie, wybór, usuwanie, nie mock)
+- [ ] Regenerowanie ostatniej odpowiedzi asystenta
+- [ ] Edycja wysłanej wiadomości użytkownika i ponowne wysłanie
+- [ ] Prosty selektor modelu (dropdown — ręczny wybór, zanim powstanie orchestrator)
+- [ ] System prompt / osobowość Rose skonfigurowana po stronie serwera
+- [ ] i18n — infrastruktura + przełącznik PL/EN
 
-## Główny obszar — ekran powitalny
-- [x] Nagłówek powitalny
-- [x] Input na środku (statyczny)
+## Trudne
+- [ ] Streaming odpowiedzi (SSE) z NIM przez proxy do frontendu, token po tokenie
+- [ ] Animowane stany logo (idle → thinking → done) zsynchronizowane ze stanem rozmowy
+- [ ] Rate limiting na proxy (per IP / per klucz)
+- [ ] Persystencja czatów w bazie danych zamiast `localStorage` (np. SQLite)
+- [ ] Ekran ustawień (klucz API, domyślny model, motyw)
+- [ ] Załączniki / upload plików w konwersacji
+- [ ] Testy jednostkowe (komponenty frontendu + endpointy serwera)
+- [ ] CI: lint + build na każdym pushu (GitHub Actions)
 
-## Główny obszar — ekran rozmowy
-- [x] Przełączanie widoku: nowy czat / aktywna rozmowa
-- [x] Kontener na wiadomości (mock dane)
-- [x] Bąbelek wiadomości użytkownika
-- [x] Blok odpowiedzi asystenta
-- [x] Input przyklejony na dole
+## Bardzo trudne
+- [ ] Smart orchestrator — automatyczna delegacja do wyspecjalizowanego modelu wg treści zapytania
+- [ ] Obsługa tool use / function calling dla modeli, które to wspierają
+- [ ] Współpraca wielu modeli w jednej odpowiedzi (orchestrator + specjalista razem)
+- [ ] Wdrożenie produkcyjne (hosting proxy, domena, HTTPS)
+- [ ] Uwierzytelnianie użytkownika (gdyby projekt stał się multi-user)
+- [ ] Voice input/output
 
-## Interakcje rozmowy
-- [x] Lokalne wysyłanie wiadomości użytkownika
-
-## Później
-- [ ] Obsługa PL / EN w UI (i18n)
-- [ ] Integracja z providerami np. NVIDIA NIM
+## Później / niezdecydowane
+- [ ] Integracja z innymi providerami poza NVIDIA NIM (Cerebras, Groq, Mistral)
