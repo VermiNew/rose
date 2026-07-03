@@ -1,5 +1,5 @@
 import { LuPlus, LuUserRound } from 'react-icons/lu'
-import roseLogo from '../../assets/branding/rose-primary.png'
+import roseLogo from '../../assets/branding/rose-primary.svg'
 import './Sidebar.css'
 
 const recentChats = [
