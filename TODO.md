@@ -5,7 +5,7 @@
 - [x] Paleta kolorów ustalona (rose / red / green / amber / neutral, 32 odcienie)
 - [x] Zapisać paletę jako CSS variables w `src/styles/`
 - [x] Wyeksportować logo do SVG
-- [ ] Favicon + app icon na bazie logo
+- [x] Favicon + app icon na bazie logo
 - [ ] Animowane stany logo (idle → thinking → done) — później, wymaga SVG
 
 ## Layout (szkielet)
