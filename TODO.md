@@ -4,7 +4,7 @@
 - [x] Logo wybrane (gradient, wariant z liśćmi)
 - [x] Paleta kolorów ustalona (rose / red / green / amber / neutral, 32 odcienie)
 - [x] Zapisać paletę jako CSS variables w `src/styles/`
-- [ ] Wyeksportować logo do SVG (obecnie tylko PNG)
+- [x] Wyeksportować logo do SVG
 - [ ] Favicon + app icon na bazie logo
 - [ ] Animowane stany logo (idle → thinking → done) — później, wymaga SVG
 
