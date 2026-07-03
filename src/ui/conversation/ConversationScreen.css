@@ -61,6 +61,10 @@
   color: var(--rose-200);
 }
 
+.conversation-screen .message.assistant {
+  max-width: 70ch;
+}
+
 @media (max-width: 600px) {
   .conversation-screen .message-list {
     padding: 16px 8px;

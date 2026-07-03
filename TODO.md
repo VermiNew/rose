@@ -24,7 +24,7 @@ tandetnych gradientów i cieni "na siłę".
 - [ ] Przycisk kopiowania treści przy wiadomości asystenta
 - [ ] Empty state, gdy lista czatów w sidebarze jest pusta
 - [ ] React error boundary na wypadek crasha komponentu
-- [ ] Ograniczyć szerokość tekstu wiadomości (max-width, wygodna długość linii)
+- [x] Ograniczyć szerokość tekstu wiadomości (max-width, wygodna długość linii)
 - [ ] Stylowanie scrollbara pod ciemny motyw (subtelny, nie systemowy)
 - [ ] Ujednolicić promienie zaokrągleń i odstępy (jedna skala, nie przypadkowe wartości)
 - [ ] Wyraźniejszy stan hover/focus na liście czatów i przyciskach
