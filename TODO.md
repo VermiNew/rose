@@ -23,7 +23,7 @@ tandetnych gradientów i cieni "na siłę".
 - [ ] Wskaźnik „Rose pisze…" w UI (statyczny tekst, bez animacji logo)
 - [ ] Przycisk kopiowania treści przy wiadomości asystenta
 - [ ] Empty state, gdy lista czatów w sidebarze jest pusta
-- [ ] React error boundary na wypadek crasha komponentu
+- [x] React error boundary na wypadek crasha komponentu
 - [x] Ograniczyć szerokość tekstu wiadomości (max-width, wygodna długość linii)
 - [x] Stylowanie scrollbara pod ciemny motyw (subtelny, nie systemowy)
 - [x] Ujednolicić promienie zaokrągleń i odstępy (jedna skala, nie przypadkowe wartości)
